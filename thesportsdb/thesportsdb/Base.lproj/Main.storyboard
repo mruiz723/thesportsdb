@@ -13,22 +13,22 @@
         <!--Teams-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="thesportsdb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TeamViewController" customModule="thesportsdb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mDH-Sm-ign">
-                                <rect key="frame" x="20" y="97.5" width="335" height="30"/>
+                                <rect key="frame" x="20" y="84" width="335" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leagues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-qC-zfC">
-                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter by League" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-qC-zfC">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="30"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5y2-fI-a8O">
-                                        <rect key="frame" x="66.5" y="0.0" width="268.5" height="30"/>
+                                        <rect key="frame" x="122.5" y="0.0" width="212.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -36,24 +36,24 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlt-QY-EES">
-                                <rect key="frame" x="137.5" y="64" width="100" height="33.5"/>
+                                <rect key="frame" x="137.5" y="64" width="100" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="nxv-T3-y9X"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mpm-rg-fcp">
-                                <rect key="frame" x="0.0" y="127.5" width="375" height="539.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mpm-rg-fcp">
+                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamCell" rowHeight="60" id="img-jT-kTY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamCell" rowHeight="60" id="img-jT-kTY" customClass="TeamCell" customModule="thesportsdb" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="img-jT-kTY" id="qeS-5b-DLM">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-f6-MTa">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-f6-MTa">
                                                     <rect key="frame" x="20" y="8" width="335" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-Mx-wlZ">
@@ -63,18 +63,38 @@
                                                                 <constraint firstAttribute="width" constant="44" id="wA4-4e-yxw"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Taf-6c-6YT">
-                                                            <rect key="frame" x="71" y="0.0" width="264" height="44"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ReI-UV-kIS">
+                                                            <rect key="frame" x="54" y="0.0" width="55" height="44"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12C-oz-zN1">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="264" height="22.5"/>
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Team:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-va-3kH">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="55" height="26"/>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-oh-103">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="264" height="19.5"/>
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-OT-5Cb">
+                                                                    <rect key="frame" x="0.0" y="28" width="55" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" priority="250" constant="55" id="cdT-Xl-AGE"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Taf-6c-6YT">
+                                                            <rect key="frame" x="119" y="0.0" width="216" height="44"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Team:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12C-oz-zN1">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="216" height="26"/>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-oh-103">
+                                                                    <rect key="frame" x="0.0" y="28" width="216" height="16"/>
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -90,27 +110,60 @@
                                                 <constraint firstItem="S6H-f6-MTa" firstAttribute="centerX" secondItem="qeS-5b-DLM" secondAttribute="centerX" id="iYD-rD-GkO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="badgeImageView" destination="AE0-Mx-wlZ" id="dh6-M6-9jQ"/>
+                                            <outlet property="nameLabel" destination="12C-oz-zN1" id="aGm-r2-jxx"/>
+                                            <outlet property="stadiumLabel" destination="2Oq-oh-103" id="3Lh-h6-ddy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yfr-f3-Ogw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lu2-Zt-SeJ"/>
+                                </connections>
                             </tableView>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zuu-A6-Xvw">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                            </pickerView>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-Wn-m6a">
+                                <rect key="frame" x="0.0" y="407" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4VH-Nk-07v"/>
+                                    <barButtonItem title="Done" id="EPw-ie-J3K">
+                                        <connections>
+                                            <action selector="doneLeague:" destination="BYZ-38-t0r" id="t5s-Gq-xgc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Zuu-A6-Xvw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0MM-Cg-GMj"/>
                             <constraint firstItem="mDH-Sm-ign" firstAttribute="top" secondItem="zlt-QY-EES" secondAttribute="bottom" id="5sF-XA-e1L"/>
+                            <constraint firstItem="pdz-Wn-m6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ic-ge-Phm"/>
                             <constraint firstItem="zlt-QY-EES" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7SZ-aj-FUL"/>
                             <constraint firstItem="mpm-rg-fcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DyX-uV-1Bg"/>
-                            <constraint firstItem="zlt-QY-EES" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="Gbw-fI-TzF"/>
-                            <constraint firstItem="mpm-rg-fcp" firstAttribute="top" secondItem="mDH-Sm-ign" secondAttribute="bottom" id="NwA-Ed-ttq"/>
+                            <constraint firstItem="zlt-QY-EES" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.03" id="Gbw-fI-TzF"/>
+                            <constraint firstItem="mpm-rg-fcp" firstAttribute="top" secondItem="mDH-Sm-ign" secondAttribute="bottom" constant="10" id="NwA-Ed-ttq"/>
                             <constraint firstItem="zlt-QY-EES" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SAN-iq-C5i"/>
                             <constraint firstItem="mDH-Sm-ign" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Swn-mp-wiq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zuu-A6-Xvw" secondAttribute="bottom" id="ZOl-OI-Imj"/>
+                            <constraint firstItem="Zuu-A6-Xvw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dmn-qw-hSI"/>
                             <constraint firstItem="mpm-rg-fcp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="isA-Fj-FTA"/>
+                            <constraint firstItem="Zuu-A6-Xvw" firstAttribute="top" secondItem="pdz-Wn-m6a" secondAttribute="bottom" id="k3e-oS-lmx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mDH-Sm-ign" secondAttribute="trailing" constant="20" id="p9T-bk-zRC"/>
                             <constraint firstItem="mpm-rg-fcp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tqF-XH-MXQ"/>
+                            <constraint firstItem="pdz-Wn-m6a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tyW-FD-wlw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Teams" id="gpQ-24-wqT"/>
                     <connections>
+                        <outlet property="filterTextField" destination="5y2-fI-a8O" id="wY9-np-XpB"/>
+                        <outlet property="leaguePicker" destination="Zuu-A6-Xvw" id="T87-uh-2yy"/>
+                        <outlet property="leagueToolbar" destination="pdz-Wn-m6a" id="mqQ-hf-LKe"/>
+                        <outlet property="teamTableView" destination="mpm-rg-fcp" id="LCR-TG-WZ6"/>
                         <segue destination="e2e-cn-7h0" kind="show" identifier="DetailTeam" id="fSU-Jg-Q77"/>
                     </connections>
                 </viewController>
@@ -121,7 +174,7 @@
         <!--Team-->
         <scene sceneID="5Yw-Rx-xnD">
             <objects>
-                <viewController id="e2e-cn-7h0" sceneMemberID="viewController">
+                <viewController id="e2e-cn-7h0" customClass="DetailTeamViewController" customModule="thesportsdb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWR-HR-eaG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +233,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="qGg-gQ-KTe"/>
                                                 </constraints>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
