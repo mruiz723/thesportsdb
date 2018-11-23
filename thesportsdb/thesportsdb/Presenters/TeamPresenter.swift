@@ -18,6 +18,7 @@ protocol TeamView: NSObjectProtocol {
     func startLoading()
     func finishLoading()
     func setTeams(_ teams: [TeamViewData])
+    func teams(_ teams: [Team])
 }
 
 class TeamPresenter: BasePresenter{
@@ -52,17 +53,16 @@ class TeamPresenter: BasePresenter{
                         return TeamViewData(name: "\($0.teamName)", stadium: "\($0.stadium)", badge: "\($0.badgeImageURL?.absoluteString ?? "")")
                     }
                     self?.teamView?.setTeams(mappedTeams)
+                    self?.teamView?.teams(teams)
                 }
             }
         }
     }
-    
+        
     func imageFromURL(_ URL: URL, completionHandler: @escaping CompletionHandler) {
         teamService.imageFromURL(URL) { (success, data) in
             completionHandler(success, data)
         }
     }
-    
-    
-    
+
 }

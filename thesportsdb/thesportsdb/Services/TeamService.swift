@@ -37,7 +37,28 @@ class TeamService {
         
     }
     
-    func teamsWithJsonTeams(jsonTeams: JSON) -> [Team] {
+    func next5EventsByTeamID(_ idTeam: String, completionHandler:@escaping CompletionHandler){
+        let urlString = Constants.kBaseURL + Constants.KTeamEventsURL + "id=\(idTeam)"
+        guard let url = URL(string: urlString) else {
+            completionHandler(false, ["error": Constants.kBaseURL])
+            return
+        }
+        Alamofire.request(url, method: .get, parameters: nil)
+            .validate()
+            .responseData { (response) in
+                guard response.result.isSuccess else {
+                    print("Get teams failed: \(String(describing: response.result.error))")
+                    completionHandler(false, ["error": Constants.kErrorFetchingTeams])
+                    return
+                }
+                
+                let json = try! JSON(data: response.result.value!, options: .allowFragments)
+                let events:[Event] = self .eventsWithJsonEvents(jsonEvents: json)
+                completionHandler(true, ["data": events])
+        }
+    }
+    
+    private func teamsWithJsonTeams(jsonTeams: JSON) -> [Team] {
         var teams = [Team]()
         let jsonTeamsArray = jsonTeams["teams"]
         
@@ -48,6 +69,18 @@ class TeamService {
         }
         
         return teams
+    }
+    
+    private func eventsWithJsonEvents(jsonEvents: JSON) -> [Event] {
+        var events = [Event]()
+        let jsonEventsArray = jsonEvents["events"]
+        
+        for (_,subJson):(String, JSON) in jsonEventsArray {
+            let event = Event(idEvent: subJson["idEvent"].string ?? "", eventName: subJson["strEvent"].string ?? "", filename: subJson["strFilename"].string ?? "", league: subJson["strLeague"].string ?? "", homeTeam: subJson["strHomeTeam"].string ?? "", awayTeam: subJson["strAwayTeam"].string ?? "", round: subJson["intRound"].string ?? "", dateEvent: subJson["dateEvent"].string ?? "", timeEvent: subJson["strTime"].string ?? "")
+            events.append(event)
+
+        }
+        return events
     }
     
     func imageFromURL(_ URLresourse: URL, completionHandler:@escaping CompletionHandler){

@@ -22,6 +22,8 @@
 		3ECA2F0621A6128000BC9E37 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA2F0521A6128000BC9E37 /* BasePresenter.swift */; };
 		3ECA2F0921A61A9A00BC9E37 /* TeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA2F0821A61A9A00BC9E37 /* TeamService.swift */; };
 		3ECA2F0C21A6202D00BC9E37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA2F0B21A6202D00BC9E37 /* Constants.swift */; };
+		3ECA2F0F21A723AC00BC9E37 /* DetailTeamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA2F0E21A723AC00BC9E37 /* DetailTeamPresenter.swift */; };
+		3ECA2F1321A72F1100BC9E37 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA2F1221A72F1100BC9E37 /* WebViewController.swift */; };
 		532F6B4E99A843AC70EAA0F5 /* Pods_thesportsdbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE12C8C0BB3869AD2B40880 /* Pods_thesportsdbTests.framework */; };
 		BE4777C0BD71D3AFDE1E2065 /* Pods_thesportsdbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5023B34C2AD4282513F9CD4 /* Pods_thesportsdbUITests.framework */; };
 		C7ECC154C56C89BC00D12E4F /* Pods_thesportsdb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02A44A7106B82EF86D67E20 /* Pods_thesportsdb.framework */; };
@@ -68,6 +70,8 @@
 		3ECA2F0521A6128000BC9E37 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		3ECA2F0821A61A9A00BC9E37 /* TeamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamService.swift; sourceTree = "<group>"; };
 		3ECA2F0B21A6202D00BC9E37 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3ECA2F0E21A723AC00BC9E37 /* DetailTeamPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTeamPresenter.swift; sourceTree = "<group>"; };
+		3ECA2F1221A72F1100BC9E37 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		4BF91BA3D24C9F059023E8C3 /* Pods-thesportsdbUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thesportsdbUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thesportsdbUITests/Pods-thesportsdbUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F51C439407D731E58AA8D44 /* Pods-thesportsdbUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thesportsdbUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-thesportsdbUITests/Pods-thesportsdbUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8692C31BBEC88F42E19CD708 /* Pods-thesportsdbTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thesportsdbTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thesportsdbTests/Pods-thesportsdbTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 			children = (
 				3ECA2F0321A6108300BC9E37 /* TeamPresenter.swift */,
 				3ECA2F0521A6128000BC9E37 /* BasePresenter.swift */,
+				3ECA2F0E21A723AC00BC9E37 /* DetailTeamPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				3ECA2EFD21A6099E00BC9E37 /* TeamViewController.swift */,
 				3ECA2EFF21A609AD00BC9E37 /* DetailTeamViewController.swift */,
 				3ECA2F0121A60A3700BC9E37 /* TeamCell.swift */,
+				3ECA2F1221A72F1100BC9E37 /* WebViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +457,8 @@
 				3ECA2F0221A60A3700BC9E37 /* TeamCell.swift in Sources */,
 				3ECA2EF621A5FF1900BC9E37 /* Team.swift in Sources */,
 				3ECA2F0C21A6202D00BC9E37 /* Constants.swift in Sources */,
+				3ECA2F0F21A723AC00BC9E37 /* DetailTeamPresenter.swift in Sources */,
+				3ECA2F1321A72F1100BC9E37 /* WebViewController.swift in Sources */,
 				3E7B1CAB21A5B78900AA933F /* AppDelegate.swift in Sources */,
 				3ECA2F0021A609AD00BC9E37 /* DetailTeamViewController.swift in Sources */,
 				3ECA2F0921A61A9A00BC9E37 /* TeamService.swift in Sources */,

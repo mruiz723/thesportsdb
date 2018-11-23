@@ -20,6 +20,7 @@ class TeamViewController: UIViewController {
     // MARK - Properties
     fileprivate let teamPresenter = TeamPresenter(teamService: TeamService())
     fileprivate var teamsData = [TeamViewData]()
+    fileprivate var teamsRaw = [Team]()
     fileprivate var selectedIDLeague: String = Constants.kDataPickerKeys.first!
     
     // MARK - IBActions
@@ -39,6 +40,14 @@ class TeamViewController: UIViewController {
         filterTextField.delegate = self
     }
     
+    // MARK - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailTeamVC = segue.destination as? DetailTeamViewController {
+            detailTeamVC.team = sender as? Team
+        }
+    }
+    
+    // MARK - Utils
     func setupPicker()  {
         filterTextField.inputView = leaguePicker
         leaguePicker.selectRow(0, inComponent: 1, animated: true)
@@ -80,13 +89,18 @@ extension TeamViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let team = teamsRaw[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: Constants.kDetailSegueIdentifier, sender: team)
     }
     
 }
 
 extension TeamViewController: TeamView {
-    
+    func teams(_ teams: [Team]) {
+        teamsRaw = teams
+    }
+
     func startLoading() {
         SVProgressHUD.show()
     }

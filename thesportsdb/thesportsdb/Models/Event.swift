@@ -19,9 +19,4 @@ struct Event {
     let dateEvent: String
     let timeEvent: String
     
-    
-    static func teams(_ completionHandler:@escaping CompletionHandler) {
-        
-    }
-    
 }

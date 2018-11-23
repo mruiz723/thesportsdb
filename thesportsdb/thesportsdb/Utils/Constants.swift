@@ -13,8 +13,10 @@ struct Constants {
     // URLs
     static let kBaseURL = "https://www.thesportsdb.com/api/v1/json/1/"
     static let kTeamsBySpanishLeagueURL = "search_all_teams.php?l=Spanish%20La%20Liga"
-    static let KTeamEventsURL = "eventsnext.php?id=133724"
+    static let KTeamEventsURL = "eventsnext.php?"
     static let kTeamsByIDLeague = "lookup_all_teams.php?"
+    
+
     
     // Errors
     static let kErrorURL = "Something went wrong!"
@@ -32,5 +34,9 @@ struct Constants {
     static let kDataPickerKeys = [ "4335" ,
                                     "4328",
                                     "4332"]
+
+    // Navigations
+    static let kDetailSegueIdentifier = "DetailTeamSegue"
+    static let kWebSegueIdentifier = "WebSegue"
 
 }

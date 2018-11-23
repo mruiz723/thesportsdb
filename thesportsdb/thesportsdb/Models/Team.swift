@@ -21,5 +21,4 @@ struct Team {
     let twitterURL: URL?
     let youtubeURL: URL?
     let websiteURL: URL?
-//    let events: [Event]
 }
