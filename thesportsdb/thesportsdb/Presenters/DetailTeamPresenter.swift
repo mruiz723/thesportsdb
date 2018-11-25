@@ -9,7 +9,10 @@
 import Foundation
 
 struct EventViewData{
+    let round: String
     let titleEvent: String
+    let date: String
+    let time: String
 }
 
 protocol DetailTeamView: NSObjectProtocol {
@@ -47,7 +50,7 @@ class DetailTeamPresenter: BasePresenter{
                 self?.detailTeamView?.finishLoading()
                 if let events = data["data"] as? [Event] {
                     let mappedEvents = events.map {
-                        return EventViewData(titleEvent: "Ronda: \($0.round), \($0.eventName), Fecha: \($0.dateEvent) Hora: \($0.timeEvent) ")
+                        return EventViewData(round: "Round: \($0.round)", titleEvent: "\($0.eventName)", date: "Date: \($0.dateEvent)",  time: "Time: \($0.timeEvent)")
                     }
                     self?.detailTeamView?.setEvents(mappedEvents)
                 }

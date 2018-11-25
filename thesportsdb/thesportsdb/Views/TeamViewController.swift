@@ -83,7 +83,7 @@ extension TeamViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         }
         
-        return UITableViewCell()
+        return TeamCell()
     }
     
     

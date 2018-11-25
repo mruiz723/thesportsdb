@@ -25,6 +25,7 @@ struct Constants {
     
     // CellIdentifiers
     static let kTeamCellIdentifier = "TeamCell"
+    static let kEventCellIdentifier = "EventCell"
 
     // PickerLeague
     static let KNumberComponentsLeaguePicker = 1

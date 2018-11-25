@@ -54,7 +54,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-f6-MTa">
-                                                    <rect key="frame" x="20" y="8" width="280" height="44"/>
+                                                    <rect key="frame" x="20" y="8" width="335" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-Mx-wlZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -84,16 +84,16 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Taf-6c-6YT">
-                                                            <rect key="frame" x="119" y="0.0" width="161" height="44"/>
+                                                            <rect key="frame" x="119" y="0.0" width="216" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Team:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12C-oz-zN1">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="161" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="216" height="26"/>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-oh-103">
-                                                                    <rect key="frame" x="0.0" y="28" width="161" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="28" width="216" height="16"/>
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -296,7 +296,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iWs-sM-qoC" userLabel="EventsStackView">
-                                                <rect key="frame" x="20" y="407.5" width="335" height="104.5"/>
+                                                <rect key="frame" x="20" y="407.5" width="335" height="159.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Events" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgI-BR-g98">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
@@ -304,38 +304,107 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGV-zd-ch3">
-                                                        <rect key="frame" x="0.0" y="19.5" width="335" height="17"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eW-v6-HLO">
-                                                        <rect key="frame" x="0.0" y="36.5" width="335" height="17"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2O-2D-zwv">
-                                                        <rect key="frame" x="0.0" y="53.5" width="335" height="17"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqq-ae-uuw">
-                                                        <rect key="frame" x="0.0" y="70.5" width="335" height="17"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNr-b7-Gpw">
-                                                        <rect key="frame" x="0.0" y="87.5" width="335" height="17"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cGk-mp-eRL">
+                                                        <rect key="frame" x="0.0" y="19.5" width="335" height="140"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="140" id="E7q-EC-QQP"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="66D-MG-71B">
+                                                            <size key="itemSize" width="343" height="120"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventCell" id="1uP-pG-fTt" customClass="EventCell" customModule="thesportsdb" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="10" width="343" height="120"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNT-fi-B7g">
+                                                                            <rect key="frame" x="8" y="28" width="327" height="84"/>
+                                                                            <subviews>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bRf-DA-Yqw">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="84"/>
+                                                                                    <subviews>
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KRH-mc-PHF">
+                                                                                            <rect key="frame" x="102" y="0.0" width="123" height="49"/>
+                                                                                            <subviews>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ronda: 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBE-Qa-Vgq">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="123" height="19.5"/>
+                                                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PSV vs Barcelona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv4-xc-uGM">
+                                                                                                    <rect key="frame" x="0.0" y="29.5" width="123" height="19.5"/>
+                                                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                            </subviews>
+                                                                                        </stackView>
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ulw-OE-0g4">
+                                                                                            <rect key="frame" x="40.5" y="52" width="246.5" height="32"/>
+                                                                                            <subviews>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 2018-11-28 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBj-AN-zSj">
+                                                                                                    <rect key="frame" x="0.0" y="6.5" width="121.5" height="19.5"/>
+                                                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPU-pr-D2f">
+                                                                                                    <rect key="frame" x="136.5" y="6.5" width="110" height="19.5"/>
+                                                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                            </subviews>
+                                                                                        </stackView>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="bRf-DA-Yqw" firstAttribute="top" secondItem="wNT-fi-B7g" secondAttribute="top" id="H0t-9D-MY5"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="bRf-DA-Yqw" secondAttribute="bottom" id="JOh-TU-XgF"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="bRf-DA-Yqw" secondAttribute="trailing" id="eZO-vA-o2U"/>
+                                                                                <constraint firstItem="bRf-DA-Yqw" firstAttribute="leading" secondItem="wNT-fi-B7g" secondAttribute="leading" id="oV7-jX-lvu"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                </view>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailingMargin" secondItem="wNT-fi-B7g" secondAttribute="trailing" id="1DO-MT-QrL"/>
+                                                                    <constraint firstItem="wNT-fi-B7g" firstAttribute="leading" secondItem="1uP-pG-fTt" secondAttribute="leadingMargin" id="Ubr-Pb-qBq"/>
+                                                                    <constraint firstItem="wNT-fi-B7g" firstAttribute="top" secondItem="1uP-pG-fTt" secondAttribute="topMargin" id="Wra-Xs-PjR"/>
+                                                                    <constraint firstAttribute="bottomMargin" secondItem="wNT-fi-B7g" secondAttribute="bottom" id="r8w-LV-Z9h"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="EBj-AN-zSj" id="tiq-7N-dx4"/>
+                                                                    <outlet property="roundLabel" destination="lBE-Qa-Vgq" id="Qfd-Pa-QBf"/>
+                                                                    <outlet property="timeLabel" destination="dPU-pr-D2f" id="JMC-W9-XLb"/>
+                                                                    <outlet property="titleEventLabel" destination="Bv4-xc-uGM" id="mhT-Gv-UFv"/>
+                                                                </connections>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="e2e-cn-7h0" id="qP2-fL-367"/>
+                                                            <outlet property="delegate" destination="e2e-cn-7h0" id="fzA-nr-Do2"/>
+                                                        </connections>
+                                                    </collectionView>
                                                 </subviews>
                                             </stackView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="9UL-NH-YuE">
+                                                <rect key="frame" x="152" y="530" width="71" height="37"/>
+                                                <connections>
+                                                    <action selector="eventPageControl:" destination="e2e-cn-7h0" eventType="valueChanged" id="jTV-Hh-LFr"/>
+                                                </connections>
+                                            </pageControl>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -347,11 +416,13 @@
                                             <constraint firstItem="BPt-sx-IgN" firstAttribute="top" secondItem="y5F-Ba-Wfc" secondAttribute="bottom" constant="5" id="Ncp-CN-WRY"/>
                                             <constraint firstItem="QdK-I6-sio" firstAttribute="leading" secondItem="QYb-zt-2Fl" secondAttribute="leading" constant="20" id="NpW-5G-k3e"/>
                                             <constraint firstItem="QdK-I6-sio" firstAttribute="centerX" secondItem="QYb-zt-2Fl" secondAttribute="centerX" id="RJx-RX-tI7"/>
+                                            <constraint firstItem="9UL-NH-YuE" firstAttribute="centerX" secondItem="QYb-zt-2Fl" secondAttribute="centerX" id="X1c-5o-Tnh"/>
                                             <constraint firstItem="y5F-Ba-Wfc" firstAttribute="centerX" secondItem="QYb-zt-2Fl" secondAttribute="centerX" id="YcQ-DQ-N7E"/>
                                             <constraint firstItem="y5F-Ba-Wfc" firstAttribute="leading" secondItem="QYb-zt-2Fl" secondAttribute="leading" constant="20" id="eVY-u6-bes"/>
                                             <constraint firstAttribute="trailing" secondItem="iWs-sM-qoC" secondAttribute="trailing" constant="20" id="evL-tb-gNy"/>
                                             <constraint firstItem="BPt-sx-IgN" firstAttribute="centerX" secondItem="QYb-zt-2Fl" secondAttribute="centerX" id="geJ-Rz-tI2"/>
                                             <constraint firstItem="y5F-Ba-Wfc" firstAttribute="top" secondItem="QYb-zt-2Fl" secondAttribute="top" constant="10" id="gh1-J5-jtc"/>
+                                            <constraint firstItem="9UL-NH-YuE" firstAttribute="top" secondItem="iWs-sM-qoC" secondAttribute="bottom" constant="-37" id="nLS-5D-CS0"/>
                                             <constraint firstItem="3Mv-QX-vWq" firstAttribute="top" secondItem="BPt-sx-IgN" secondAttribute="bottom" constant="5" id="v3d-WP-4gX"/>
                                             <constraint firstAttribute="trailing" secondItem="QdK-I6-sio" secondAttribute="trailing" constant="20" id="xeb-gp-bYQ"/>
                                             <constraint firstItem="3Mv-QX-vWq" firstAttribute="centerX" secondItem="QYb-zt-2Fl" secondAttribute="centerX" id="zXE-5m-fFQ"/>
@@ -384,16 +455,13 @@
                         <outlet property="aboutUsTextView" destination="QdK-I6-sio" id="fZb-p0-9G1"/>
                         <outlet property="badgeImageView" destination="oU5-ue-zqg" id="QYb-bP-cyA"/>
                         <outlet property="contentView" destination="QYb-zt-2Fl" id="gtR-zB-f7W"/>
+                        <outlet property="eventCollectionView" destination="cGk-mp-eRL" id="ZmE-jZ-uDM"/>
+                        <outlet property="eventPageControl" destination="9UL-NH-YuE" id="nes-OQ-fj3"/>
                         <outlet property="eventsStackView" destination="iWs-sM-qoC" id="cgc-Pn-4Ce"/>
                         <outlet property="foundedLabel" destination="6Kz-GN-IP4" id="m3w-iG-4Bn"/>
                         <outlet property="jerseyImageView" destination="0fJ-xm-UvG" id="HxE-7t-HGF"/>
                         <outlet property="scrollView" destination="H1D-42-acj" id="93a-rW-dGc"/>
                         <outlet property="socialNetworkStackView" destination="BPt-sx-IgN" id="Kjs-BY-Oor"/>
-                        <outletCollection property="eventsLabel" destination="xGV-zd-ch3" collectionClass="NSMutableArray" id="Gm2-uw-Vp7"/>
-                        <outletCollection property="eventsLabel" destination="4eW-v6-HLO" collectionClass="NSMutableArray" id="qdN-mD-Eja"/>
-                        <outletCollection property="eventsLabel" destination="O2O-2D-zwv" collectionClass="NSMutableArray" id="ry7-HM-rnN"/>
-                        <outletCollection property="eventsLabel" destination="eqq-ae-uuw" collectionClass="NSMutableArray" id="5Ac-lo-guZ"/>
-                        <outletCollection property="eventsLabel" destination="cNr-b7-Gpw" collectionClass="NSMutableArray" id="scA-8z-5TO"/>
                         <segue destination="deY-ZT-c76" kind="show" identifier="WebSegue" id="WIl-Yk-OKX"/>
                     </connections>
                 </viewController>
